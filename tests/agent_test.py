@@ -27,9 +27,9 @@ def test_agent_llm_creation_with_env_vars():
     original_model_name = os.environ.get("OPENAI_MODEL_NAME")
 
     # Set up environment variables
-    os.environ["OPENAI_API_KEY"] = "test_api_key"
-    os.environ["OPENAI_API_BASE"] = "https://test-api-base.com"
-    os.environ["OPENAI_MODEL_NAME"] = "gpt-4-turbo"
+    os.environ["OPENAI_API_KEY"] = "sk-6c169dc9506b412899176b9cec1d03e7"
+    os.environ["OPENAI_API_BASE"] = "https://api.deepseek.com/v1"
+    os.environ["OPENAI_MODEL_NAME"] = "deepseek-chat"
 
     # Create an agent without specifying LLM
     agent = Agent(role="test role", goal="test goal", backstory="test backstory")
